@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 100px;
+    left: 30%;
+    width:590px;
+    background-color: white;
+    border-radius: 10px;
+  
+}
+.img1{
+    height: 100%;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    width:300px;
+}
+
+.img2{
+    display: none;
+}
+.container div h3{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+}
+.container div h1{
+    font-family: 'Fraunces', serif;
+margin-left: 30px;
+margin-top: 20px;
+width: 250px;
+font-size:35px ;
+font-weight: 700;
+}
+.container div p{
+    margin-left: 30px;
+margin-top: 20px;
+width: 250px;
+color: rgb(0, 0, 0);
+font-weight: 500;
+font-size: 14px;
+line-height: 27px;
+}
+.item_cost{
+    margin-top: 20px;
+}
+.container div .cost{
+    font-family: 'Fraunces', serif;
+    display: inline;
+    color:  hsl(158, 36%, 37%);
+    font-weight:700;
+    font-size: 30px;
+    
+}
+.container div .cost2{
+    display: inline;
+    position: relative;
+    top: -6px;
+    font-weight:900;
+    text-decoration: line-through;
+}
+.container div *:nth-child(5){
+    display: flex;
+    background-color: hsl(158, 36%, 37%); 
+    margin: 20px auto;
+    width: 250px;
+    border-radius: 10px;
+}
+.container div *:nth-child(5) img{
+width: 20px;
+height: 20px;
+margin-top: 15px;
+margin-left: 60px;
+}
+.container div *:nth-child(5) p{
+position: relative;
+top:-8px;
+left: -10px;
+color: white;
+}
+
+@media (max-width: 500px)  {
+    .img1{
+        display: none;
+    }
+    .img2{
+        display: block;
+        width:100%;
+        
+    }
+    .container{
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 500px;
+    }
+}
